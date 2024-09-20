@@ -2,8 +2,6 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
 <table>
 <tbody>
 <tr align=center>
@@ -108,13 +106,6 @@
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
 |EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
 |--------------------|---------------------------|----------------------------------|
 | Professor nerd | Ter um assistente de inteligência artificial que organize meus documentos e trabalhos escolares, com alto grau de personalização | Recriar a dinâmica de interação que admiro, como a de Batman com Alfred ou do Homem de Ferro com Jarvis, e tornar minha experiência de organização única e eficiente. |
@@ -130,11 +121,10 @@
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
 
 ### Requisitos Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
+
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
@@ -150,7 +140,7 @@
 
 ### Requisitos não Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
+
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
@@ -167,5 +157,4 @@
 | RNF-11 |  Portabilidade: A aplicação deve ser fácil de migrar entre diferentes ambientes de hospedagem. | Média |
 | ...    |  ...                    | ...   |
 
-**Prioridade: Alta / Média / Baixa. 
 
