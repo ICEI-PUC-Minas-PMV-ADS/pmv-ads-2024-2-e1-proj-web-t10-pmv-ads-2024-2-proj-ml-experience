@@ -7,10 +7,9 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 [Adicione aqui o diagrama de fluxo de usuário da sua aplicação.] 
 
-
-```markdown
-![Diagrama](./img/User_flow.png)
-```
+<figure>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience/blob/main/documentos/img/User_flow.png?raw=true">
+</figure>
 
 
 > **Links Úteis**:
