@@ -7,19 +7,104 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">SebastiaoProfessor </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Sebastião já tentou usar plataformas de I.A. anteriormente para atingir seu objetivo, mas sentiu uma profunda falta de customização que tornasse sua experiência de fato única. </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>Ter um assistente que organize seus documentos e trabalhos da escola onde trabalha, pois sempre admirou muito a relação do Batman e seu mordomo Alfred nos quadrinhos, ou do Homem de Ferro e o Jarvis.</td>
 </tr>
 </tbody>
 </table>
 
+
+
+
+
+
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Roberta (Comediante) </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Roberta não conseguiu entrar em contato com o verdadeiro Tiririca, mas resolveu usar a I.A. abertamente na sua apresentação. Seu público gostou da ideia, mas Roberta não ficou satisfeita com nenhuma das plataformas com as quais engajou. </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Ter um debate político com o Tiririca, afins de prover entretenimento para seu público.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Alice (Criança) </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Alice está internada num hospital com uma doença grave, e a equipe do hospital não conseguiu encontrar alguém para se fantasiar e conversar com Alice. Experimentaram plataformas de I.A., mas pela falta de personalidade dos diálogos que tiveram, tiveram medo de que a Alice não acreditasse que a I.A. era a Mulher Maravilha. </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Conversar com a Mulher Maravilha, sua heroína favorita.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">João Gabriel (Estudante) </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Júnior não conhece nenhum detetive real, e apesar de ter tentado utilizar outras plataformas de I.A. para substituir um detetive real, sentiu que as respostas eram robóticas demais, carecendo de personalidade. </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Entrevistar um detetive para um trabalho escolar.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+<table>
+<tbody>
+<tr align=center>
+<th colspan="2">Mateus (Desenvolvedor) </th>
+</tr>
+<tr>
+<td width="150px"><b>Descrição</b></td>
+<td width="600px">Mateus gostaria de ter uma interface para testar diferentes personalidades e configurações de inteligências artificiais voltadas para conversação, para seus projetos pessoais.
+ </td>
+</tr>
+<tr>
+<td><b>Necessidades</b></td>
+<td>Para seus projetos, Mateus utilizou outras plataformas sentiu falta de integração e personalização da interface de conversação com o seu backend. Essa interface permitirá que ele consiga testar diversas personalidades diferentes, em menos tempo e com mais eficiência.
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Histórias de Usuários
 
