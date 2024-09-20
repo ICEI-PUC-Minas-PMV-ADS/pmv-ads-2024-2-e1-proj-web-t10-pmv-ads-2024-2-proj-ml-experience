@@ -1,9 +1,6 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
-
 ## Gerenciamento de Projeto
 A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
 
@@ -12,31 +9,27 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 ### Divisão de Papéis
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-- Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+- **Scrum Master**: **Ivan Peixoto**, principal responsável pela gestão do projeto.
+- **Product Owner**: **Antônio Real**, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
+- **Equipe de Desenvolvimento**: **Antônio Real**, **Diego Marques**, **Igor Nantes**, **Ivan Peixoto**,  **Yago Lobo**, **Túlio Pimenta** - Todos os membros são responsáveis por implementar uma tela/funcionalidade do sistema.
+- **Equipe de Design**: **Igor Nantes** - Responsável pela criação e validação do design da interface.
 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+A equipe segue a metodologia Scrum para o desenvolvimento do projeto. Utilizamos o Trello como ferramenta online para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban foi configurado com a seguinte estrutura:
 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+- **Backlog**: Tarefas que ainda não foram iniciadas.
+- **To Do**: Tarefas selecionadas para serem realizadas no sprint atual.
+- **Doing**: Tarefas que estão em desenvolvimento.
+- **In Review**: Tarefas concluídas, mas que estão passando por revisão.
+- **Done**: Tarefas completamente finalizadas.
 
+A equipe realiza reuniões diárias (Daily Scrum) para discutir o progresso, identificar obstáculos e ajustar o plano de desenvolvimento conforme necessário. Ao final de cada sprint, ocorre uma revisão (Sprint Review) para avaliar os resultados e um Sprint Retrospective para discutir possíveis melhorias no processo.
+
+Abaixo está uma imagem do Kanban do projeto:
+
+<!--![Kanban do Projeto](caminho_para_imagem_do_kanban)-->
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
@@ -57,9 +50,18 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
   
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+As seguintes ferramentas foram empregadas no desenvolvimento do projeto ML-Xperience:
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+- **LucidChart**: Utilizado para o criação de diagramas.
+- **GitHub**: Utilizado para o controle de versão e gestão do código-fonte, permitindo a colaboração entre os membros da equipe e o acompanhamento das alterações no código de forma centralizada.
+- **Trello**: Ferramenta de gestão de times usada para o acompanhamento das tarefas e organização das sprints. A equipe seguiu o método Scrum e utilizou o quadro Kanban no Trello para gerenciar o status das tarefas em cada sprint.
+- **Visual Studio (Code)**: Ambiente de desenvolvimento integrado (IDE) utilizado pela equipe para escrever e depurar o código, com suporte para extensões que facilitaram o desenvolvimento em conjunto.
+- **Figma**: Ferramenta usada para design e prototipagem de interfaces, permitindo que os membros do time de design colaborassem em tempo real na criação de layouts e fluxos de usuários.
+- **Azure**: Plataforma de nuvem utilizada para a implantação e hospedagem da aplicação, garantindo a escalabilidade e disponibilidade do sistema.
+- **.NET Core**: Framework utilizado para o desenvolvimento do back-end, permitindo a integração com APIs e a lógica de negócios.
+- **HTML/CSS/JavaScript**: Linguagens utilizadas no desenvolvimento do front-end, garantindo a criação de uma interface web responsiva e interativa.
+
+A estrutura de trabalho seguiu o processo Scrum, onde cada membro tinha responsabilidades específicas. O código-fonte era gerido no GitHub, e a equipe utilizava branches para implementar novas funcionalidades, realizando pull requests para revisão antes de integrar ao branch principal.
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
@@ -70,6 +72,6 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
-### Estratégia de Organização de Codificação 
+### Estratégia de Organização de Codificação
 
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+TODO
