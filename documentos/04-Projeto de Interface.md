@@ -17,18 +17,25 @@ Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas
 
 ### Protótipo de baixa fidelidade
 
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
+<figure>
+  <figcaption>Wireframe 1: Tela de Login</figcaption>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience/blob/main/documentos/img/login.png?raw=true">
+</figure>
 
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
+<figure>
+  <figcaption>Wireframe 2: Tela de Cadastro </figcaption>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience/blob/main/documentos/img/cadastro.png?raw=true">
+</figure>
 
-[Adicione aqui as telas da sua aplicação com seus devidos títulos.] 
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
+<figure>
+  <figcaption>Wireframe 3: Tela Principal</figcaption>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience/blob/main/documentos/img/main.png?raw=true">
+</figure>
+
+<figure>
+ <figcaption>Wireframe 4: Tela de Perfil</figcaption>
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience/blob/main/documentos/img/perfil.png?raw=true">
+</figure>
 
 
 
