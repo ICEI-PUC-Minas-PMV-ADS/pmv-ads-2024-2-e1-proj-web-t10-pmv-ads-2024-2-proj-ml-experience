@@ -1,0 +1,54 @@
+body {
+    background-image: url('images/fundo2.png'); /* Coloque o caminho correto da sua imagem */
+    background-size: cover; /* Garante que a imagem cubra todo o background */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo ocupe a tela inteira */
+    overflow-x: hidden;
+    overflow-y: auto; /* Permite rolagem na página */
+  }
+  
+  .container-fluid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ajusta o container para ocupar a altura total da página */
+  }
+  
+  .sidebar {
+    background-color: rgba(42, 75, 92, 0.8); /* Cor de fundo com transparência */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+  }
+  
+  .sidebar h5 {
+    font-weight: bold;
+  }
+  
+  .sidebar .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .persona-btn {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .persona-btn:hover {
+    background-color: #004494;
+  }
