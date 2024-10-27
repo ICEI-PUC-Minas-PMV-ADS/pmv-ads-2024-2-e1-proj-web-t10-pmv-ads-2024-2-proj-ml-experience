@@ -3,9 +3,11 @@
 ## Estratégia de Organização de Codificação 
 
 Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organização das pastas e artefatos de implementação no sistema de arquivos, sugerimos que o projeto seja estruturado de modo que cada aluno trabalhe com seus arquivos nas suas respectivas pastas, identificadas por nomes das suas respectivas telas. Por exemplo:
-- Pasta src (root do projeto): index.html, index.css, index.js - Desenvolvedora responsável: Aluna X.
-- Pasta src\clientes: clientes.html, clientes.css, clientes.js - Desenvolvedor responsável: Aluno Y.
-- Pasta src\funcionarios: funcionarios.html, funcionarios.css, funcionarios.js  - Desenvolvedora responsável: Aluna Z.
+- Pasta src : index.html, index.css, index.js - Desenvolvedor responsável: Igor Nantes.
+- Pasta src: create-persona.html, create-persona.css, create-persona.js - Desenvolvedor responsável: Yago Lobo.
+- Pasta src: edit-persona.html, edit-persona.css, edit-persona.js  - Desenvolvedor responsável: Diego Marques.
+- Pasta src: personas.html, personas.css, personas.js  - Desenvolvedor responsável: Tulio Pimenta e Antonio Real.
+- Pasta src : login.html, login.css, login.js - Desenvolvedor responsável: Ivan Peixoto.
 
 ## Instalação do Site
 
