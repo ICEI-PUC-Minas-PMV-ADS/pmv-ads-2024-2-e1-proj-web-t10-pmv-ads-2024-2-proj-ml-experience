@@ -53,7 +53,7 @@ function alertSuccess(message) {
     }
 
 
-  const persona = { name, description, image, public: isPublic };
+  const persona = { name, owner, description, image, public: isPublic };
 
   const storedPersonas = JSON.parse(localStorage.getItem('personas')) || [];
 
