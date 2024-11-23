@@ -1,8 +1,7 @@
 let selectedPersona = '';
 const defaultPersonaImage = 'images/persona-main.png';
-let currentModel = 'llama'; // Define o modelo inicial como 'llama'
+let currentModel = 'llama';
 
-// JSON com as personas públicas
 const defaultPublicPersonas = [
     {
         "name": "Rick Sanchez",
@@ -42,103 +41,6 @@ const defaultPublicPersonas = [
     }
 ];
 
-// Função para inicializar personas públicas no localStorage
-function initializePublicPersonas() {
-    const personasInStorage = localStorage.getItem('personas_publicas');
-    if (!personasInStorage) {
-        localStorage.setItem('personas_publicas', JSON.stringify(defaultPublicPersonas));
-        console.log('Personas públicas foram inicializadas no localStorage.');
-    } else {
-        console.log('Personas públicas já estão armazenadas no localStorage.');
-    }
-}
-
-// Função para carregar o nome do usuário logado
-function loadLoggedUser() {
-    const loggedUser = localStorage.getItem('currentUser');
-    const usernameElement = document.getElementById('username');
-    if (loggedUser && usernameElement) {
-        usernameElement.innerText = loggedUser;
-    } else {
-        console.warn('Nenhum usuário logado encontrado ou elemento #username ausente.');
-    }
-    loadPersonas(); // Carregar personas públicas
-}
-
-// Função para carregar personas do localStorage
-function loadPersonas() {
-    const personasData = localStorage.getItem('personas_publicas');
-    const personas = personasData ? JSON.parse(personasData) : [];
-
-    if (personas.length === 0) {
-        console.warn('Nenhuma persona pública encontrada no localStorage.');
-        displayPersonas([]); // Exibe mensagem de que não há personas disponíveis
-    } else {
-        console.log('Personas públicas carregadas:', personas);
-        displayPersonas(personas);
-    }
-}
-
-// Função para exibir personas na interface
-function displayPersonas(personas) {
-    const personaList = document.getElementById('personaList');
-    if (!personaList) {
-        console.error("Elemento 'personaList' não encontrado no DOM.");
-        return;
-    }
-
-    personaList.innerHTML = '';
-
-    if (personas.length > 0) {
-        personas.forEach(persona => displayPersona(persona, personaList));
-    } else {
-        personaList.innerHTML = '<p>Nenhuma persona disponível no momento.</p>';
-    }
-}
-
-// Função para exibir cada persona na lista
-function displayPersona(persona, container) {
-    const personaWrapper = document.createElement('div');
-    personaWrapper.classList.add('persona-wrapper');
-
-    const circle = document.createElement('div');
-    circle.classList.add('persona-circle');
-
-    const img = document.createElement('img');
-    img.src = persona.image || 'images/default-persona.png';
-    img.alt = persona.name;
-    img.classList.add('persona-image');
-
-    const name = document.createElement('div');
-    name.classList.add('persona-name');
-    name.textContent = persona.name;
-
-    circle.appendChild(img);
-    personaWrapper.appendChild(circle);
-    personaWrapper.appendChild(name);
-
-    personaWrapper.onclick = () => selectPersona(persona);
-
-    container.appendChild(personaWrapper);
-}
-
-// Função para selecionar uma persona e exibir sua descrição
-function selectPersona(persona) {
-    selectedPersona = persona.name;
-
-    const selectedPersonaNameElement = document.getElementById('selectedPersonaName');
-    const selectedPersonaImageElement = document.getElementById('selectedPersonaImage');
-    const personaDescriptionElement = document.getElementById('personaDescription');
-
-    if (selectedPersonaNameElement) selectedPersonaNameElement.innerText = persona.name;
-    if (selectedPersonaImageElement) {
-        selectedPersonaImageElement.style.backgroundImage = `url(${persona.image || defaultPersonaImage})`;
-        selectedPersonaImageElement.style.backgroundSize = 'cover';
-    }
-    if (personaDescriptionElement) personaDescriptionElement.innerText = persona.description || 'Descrição não disponível.';
-}
-
-// Função para enviar mensagem para o LLaMA rodando localmente
 const sendMessageToLLaMA = async (persona, message) => {
     try {
         const response = await fetch('http://localhost:11434/api/generate', {
@@ -161,9 +63,8 @@ const sendMessageToLLaMA = async (persona, message) => {
     }
 };
 
-// Função para enviar mensagem para o GPT-4 usando a API da OpenAI
 const sendMessageToGPT4 = async (persona, message) => {
-    const apiKey = 'substitua-sua-api-key'; // Substitua pela sua chave da OpenAI
+    const apiKey = 'substitua-sua-api-key';
     try {
         const response = await fetch('https://api.openai.com/v1/chat/completions', {
             method: 'POST',
@@ -189,7 +90,96 @@ const sendMessageToGPT4 = async (persona, message) => {
     }
 };
 
-// Função para enviar mensagem e lidar com a resposta
+function initializePublicPersonas() {
+    const personasInStorage = localStorage.getItem('personas_publicas');
+    if (!personasInStorage) {
+        localStorage.setItem('personas_publicas', JSON.stringify(defaultPublicPersonas));
+        console.log('Personas públicas foram inicializadas no localStorage.');
+    } else {
+        console.log('Personas públicas já estão armazenadas no localStorage.');
+    }
+}
+
+function loadLoggedUser() {
+    const loggedUser = localStorage.getItem('currentUser');
+    const usernameElement = document.getElementById('username');
+    if (loggedUser && usernameElement) {
+        usernameElement.innerText = loggedUser;
+    } else {
+        console.warn('Nenhum usuário logado encontrado ou elemento #username ausente.');
+    }
+    loadPersonas();
+}
+
+function loadPersonas() {
+    const personasData = localStorage.getItem('personas_publicas');
+    const personas = personasData ? JSON.parse(personasData) : [];
+
+    if (personas.length === 0) {
+        console.warn('Nenhuma persona pública encontrada no localStorage.');
+        displayPersonas([]);
+    } else {
+        console.log('Personas públicas carregadas:', personas);
+        displayPersonas(personas);
+    }
+}
+
+function displayPersonas(personas) {
+    const personaList = document.getElementById('personaList');
+    if (!personaList) {
+        console.error("Elemento 'personaList' não encontrado no DOM.");
+        return;
+    }
+
+    personaList.innerHTML = '';
+
+    if (personas.length > 0) {
+        personas.forEach(persona => displayPersona(persona, personaList));
+    } else {
+        personaList.innerHTML = '<p>Nenhuma persona disponível no momento.</p>';
+    }
+}
+
+function displayPersona(persona, container) {
+    const personaWrapper = document.createElement('div');
+    personaWrapper.classList.add('persona-wrapper');
+
+    const circle = document.createElement('div');
+    circle.classList.add('persona-circle');
+
+    const img = document.createElement('img');
+    img.src = persona.image || 'images/default-persona.png';
+    img.alt = persona.name;
+    img.classList.add('persona-image');
+
+    const name = document.createElement('div');
+    name.classList.add('persona-name');
+    name.textContent = persona.name;
+
+    circle.appendChild(img);
+    personaWrapper.appendChild(circle);
+    personaWrapper.appendChild(name);
+
+    personaWrapper.onclick = () => selectPersona(persona);
+
+    container.appendChild(personaWrapper);
+}
+
+function selectPersona(persona) {
+    selectedPersona = persona.name;
+
+    const selectedPersonaNameElement = document.getElementById('selectedPersonaName');
+    const selectedPersonaImageElement = document.getElementById('selectedPersonaImage');
+    const personaDescriptionElement = document.getElementById('personaDescription');
+
+    if (selectedPersonaNameElement) selectedPersonaNameElement.innerText = persona.name;
+    if (selectedPersonaImageElement) {
+        selectedPersonaImageElement.style.backgroundImage = `url(${persona.image || defaultPersonaImage})`;
+        selectedPersonaImageElement.style.backgroundSize = 'cover';
+    }
+    if (personaDescriptionElement) personaDescriptionElement.innerText = persona.description || 'Descrição não disponível.';
+}
+
 async function sendMessage() {
     const messageInput = document.getElementById('userMessage');
     const message = messageInput.value.trim();
@@ -201,7 +191,7 @@ async function sendMessage() {
         return;
     }
 
-    loadingIcon.style.display = 'inline-block'; // Exibe o ícone de loading
+    loadingIcon.style.display = 'inline-block';
     sendButton.disabled = true;
 
     addMessageToChat('Você', message);
@@ -216,7 +206,7 @@ async function sendMessage() {
         }
 
         if (reply.reply) {
-            addMessageToChat(selectedPersona, reply.reply.trim()); // Exibe a resposta da persona
+            addMessageToChat(selectedPersona, reply.reply.trim());
         } else {
             addMessageToChat(selectedPersona, 'Ocorreu um erro ao processar sua mensagem.');
         }
@@ -229,31 +219,27 @@ async function sendMessage() {
     }
 }
 
-// Função para adicionar mensagem ao chat
 function addMessageToChat(sender, message) {
     const chatBox = document.getElementById('chatBox');
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('message', sender === 'Você' ? 'user' : 'ai');
     messageDiv.innerText = `${sender}: ${message}`;
     chatBox.appendChild(messageDiv);
-    chatBox.scrollTop = chatBox.scrollHeight; // Rola automaticamente para a última mensagem
+    chatBox.scrollTop = chatBox.scrollHeight;
 }
 
-// Função para alternar entre GPT-4 e LLaMA
 function changeModel() {
     const modelSelect = document.getElementById('modelSelect');
     currentModel = modelSelect.value === 'gpt-4' ? 'gpt-4' : 'llama';
     document.getElementById('model-name').innerText = modelSelect.options[modelSelect.selectedIndex].text;
 }
 
-// Outras funções
 function createNewPersona() { window.location.href = 'create-persona.html'; }
 function accessUserPersonas() { window.location.href = 'user-personas.html'; }
 function handleKeyPress(event) { if (event.key === 'Enter') sendMessage(); }
 function logoutUser() { localStorage.removeItem('currentUser'); window.location.href = 'index.html'; }
 
-// Inicialização
 window.onload = function() {
-    initializePublicPersonas(); // Inicializa as personas públicas
-    loadLoggedUser();           // Carrega o usuário logado
+    initializePublicPersonas();
+    loadLoggedUser();
 };
