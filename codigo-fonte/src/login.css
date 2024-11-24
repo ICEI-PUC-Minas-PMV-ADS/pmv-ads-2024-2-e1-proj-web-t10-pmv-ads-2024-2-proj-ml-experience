@@ -45,7 +45,7 @@ body, html {
   
   
   .form-control {
-    background-color: #b3b3b3;
+    background-color: #181414;
     border: none;
     color: #d3d3d3;
     margin-bottom: 20px;
@@ -103,9 +103,14 @@ body, html {
 }
 
 .logo-img {
-    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    width: 300px;
     margin-bottom: 1px;
     animation: float 10s ease-in-out infinite;
+}
+
+.buttons-container{
+  display:flex;
+  gap: 10px;
 }
 
 @keyframes float {

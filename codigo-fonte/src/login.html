@@ -20,12 +20,14 @@
         <input type="text" class="form-control" id="username" placeholder="Usuário" oninput="intensifyFloatEffect()">
         <input type="password" class="form-control" id="password" placeholder="Senha" oninput="intensifyFloatEffect()">
         <input type="email" class="form-control email-field" id="email" placeholder="Email" style="display:none;"> 
-        <button class="btn btn-primary" onclick="login()">LOGIN
-            <i class="fas fa-spinner fa-spin loading-icon"></i>
-        </button>
-        <button class="btn btn-primary" onclick="toggleRegister()">CADASTRO
-            <i class="fas fa-spinner fa-spin loading-icon"></i>
-        </button>
+        <div class="buttons-container">
+            <button class="btn btn-primary w-100" onclick="login()">LOGIN
+                <i class="fas fa-spinner fa-spin loading-icon"></i>
+            </button>
+            <button class="btn btn-primary w-100" onclick="toggleRegister()">CADASTRO
+                <i class="fas fa-spinner fa-spin loading-icon"></i>
+            </button>
+        </div>
         <div class="forgot-password">ESQUECI MINHA SENHA</div>
     </div>
 <script type="text/javascript" src="login.js"></script>

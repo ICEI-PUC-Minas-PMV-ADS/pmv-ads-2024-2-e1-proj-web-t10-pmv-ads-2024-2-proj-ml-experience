@@ -14,7 +14,7 @@ document.addEventListener('mousemove', function(e) {
     const amountMovedY = (e.clientY / window.innerHeight * 30) - 15;
     background.style.transform = `translate(${amountMovedX}px, ${amountMovedY}px) scale(1.05)`;
 });
-
+ 
 document.querySelector('.overlay').addEventListener('click', function() {
     window.location.href = 'index.html';
 });
