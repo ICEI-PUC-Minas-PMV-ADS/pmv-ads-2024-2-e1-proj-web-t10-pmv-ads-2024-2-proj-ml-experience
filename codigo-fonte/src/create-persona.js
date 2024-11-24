@@ -3,7 +3,7 @@ let loggedUsername = '';
 
 function getLoggedUser() {
   try {
-    const userData = localStorage.getItem('loggedUser');
+    const userData = localStorage.getItem('currentUser');
     if (!userData) {
       console.error('Nenhum usuário logado encontrado.');
       return;
@@ -40,7 +40,6 @@ function alertSuccess(message) {
 
 
   async function createPersona() {
-    if (!loggedUsername) return;
     const owner = loggedUsername;
     const name = document.getElementById('personaName').value;
     const description = document.getElementById('personaDescription').value;
@@ -62,5 +61,5 @@ function alertSuccess(message) {
   localStorage.setItem('personas', JSON.stringify(storedPersonas));
 
   alertSuccess('Persona criada com sucesso!');
-  setTimeout(() => window.location.href = '/edit-personas.html', 2000); 
+  setTimeout(() => window.location.href = 'edit-personas.html', 2000); 
 }
