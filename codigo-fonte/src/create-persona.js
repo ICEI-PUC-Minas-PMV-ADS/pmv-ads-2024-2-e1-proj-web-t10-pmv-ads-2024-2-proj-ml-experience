@@ -43,7 +43,7 @@ function alertSuccess(message) {
     const owner = loggedUsername;
     const name = document.getElementById('personaName').value;
     const description = document.getElementById('personaDescription').value;
-    const image = document.getElementById('personaImage').value || '/images/default.png';
+    const image = document.getElementById('personaImage').value || 'images/persona-main.png';
     const isPublic = document.getElementById('personaPublic').checked; 
 
     if (!name || !description) {
