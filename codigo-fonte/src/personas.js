@@ -112,15 +112,23 @@ function loadLoggedUser() {
 }
 
 function loadPersonas() {
-    const personasData = localStorage.getItem('personas_publicas');
-    const personas = personasData ? JSON.parse(personasData) : [];
+    // Recupera dados de personas_publicas
+    const publicPersonasData = localStorage.getItem('personas_publicas');
+    const publicPersonas = publicPersonasData ? JSON.parse(publicPersonasData) : [];
 
-    if (personas.length === 0) {
-        console.warn('Nenhuma persona pública encontrada no localStorage.');
+    // Recupera dados de personas
+    const personasData = localStorage.getItem('personas');
+    const privatePersonas = personasData ? JSON.parse(personasData) : [];
+
+    // Combina as duas listas
+    const allPersonas = [...publicPersonas, ...privatePersonas];
+
+    if (allPersonas.length === 0) {
+        console.warn('Nenhuma persona encontrada no localStorage.');
         displayPersonas([]);
     } else {
-        console.log('Personas públicas carregadas:', personas);
-        displayPersonas(personas);
+        console.log('Personas carregadas:', allPersonas);
+        displayPersonas(allPersonas);
     }
 }
 
@@ -235,7 +243,7 @@ function changeModel() {
 }
 
 function createNewPersona() { window.location.href = 'create-persona.html'; }
-function accessUserPersonas() { window.location.href = 'user-personas.html'; }
+function accessUserPersonas() { window.location.href = 'edit-personas.html'; }
 function handleKeyPress(event) { if (event.key === 'Enter') sendMessage(); }
 function logoutUser() { localStorage.removeItem('currentUser'); window.location.href = 'index.html'; }
 

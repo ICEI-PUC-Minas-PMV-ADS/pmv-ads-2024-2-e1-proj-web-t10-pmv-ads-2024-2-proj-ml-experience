@@ -11,7 +11,6 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <!-- Barra lateral -->
             <div class="col-md-3">
                 <div class="sidebar">
                     <h5>Usuário: <span id="username">Carregando...</span></h5>
@@ -19,29 +18,28 @@
                     <select id="modelSelect" class="form-select mb-3" onchange="changeModel()">
                         <option value="gpt-4">GPT-4</option>
                         <option value="llama3">LLAMA3</option>
-                    </select>
+                    </select> 
                     <h5>Selecione a Persona:</h5>
                     <div id="personaList" class="d-flex flex-wrap justify-content-center"></div>
+                    <div id="personaListCreated" class="d-flex flex-wrap justify-content-center"></div>
+
                     <button class="btn btn-primary mb-2" onclick="createNewPersona()">Criar Persona</button>
                     <button class="btn btn-primary mb-2" onclick="accessUserPersonas()">Acessar Personas Criadas</button>
                 </div>
             </div>
 
-            <!-- Conteúdo Principal -->
             <div class="col-md-6 main-content">
                 <div class="logo">
                     <h1>ML<span>X</span>p</h1>
                 </div>
-                <!-- Chat centralizado -->
                 <div class="chat-box" id="chatBox"></div>
                 <div class="message-input">
                     <input type="text" id="userMessage" placeholder="Digite sua mensagem..." onkeydown="handleKeyPress(event)">
                     <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
-                    <i id="loadingIcon" class="fas fa-spinner fa-spin" style="display: none;"></i> <!-- Ícone de loading -->
+                    <i id="loadingIcon" class="fas fa-spinner fa-spin" style="display: none;"></i>
                 </div>
             </div>
 
-            <!-- Persona Selecionada -->
             <div class="col-md-3">
                 <div class="persona-selected">
                     <div class="persona-img" id="selectedPersonaImage"></div>
@@ -52,7 +50,6 @@
         </div>
     </div>
 
-    <!-- Botão de logout -->
     <button id="logoutBtn" title="Logout" onclick="logoutUser()">
         <i class="fas fa-sign-out-alt"></i>
     </button>

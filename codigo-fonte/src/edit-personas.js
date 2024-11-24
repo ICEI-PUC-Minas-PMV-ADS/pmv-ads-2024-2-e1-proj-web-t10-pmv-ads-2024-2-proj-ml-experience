@@ -3,7 +3,7 @@ let loggedUsername = '';
 
 function getLoggedUser() {
   try {
-    const userData = localStorage.getItem('loggedUser');
+    const userData = localStorage.getItem('users');
     if (!userData) {
       console.error('Nenhum usuário logado encontrado.');
       return;
@@ -31,22 +31,22 @@ function loadUserPersonasForEdit() {
 
     personaEditList.innerHTML = ''; 
 
-    userPersonas.forEach((persona, index) => {
+    userPersonas.forEach((personas, index) => {
       const personaDiv = document.createElement('div');
       personaDiv.classList.add('persona-item');
       personaDiv.innerHTML = `
         <div class="persona-details">
-          <img src="${persona.image}" alt="${persona.name}">
-          <input type="text" value="${persona.name}" class="edit-input" id="name-${index}" />
-          <input type="text" value="${persona.description}" class="edit-input" id="description-${index}" />
-          <input type="text" value="${persona.image}" class="edit-input" id="image-${index}" />
+          <img src="${personas.image}" alt="${personas.name}">
+          <input type="text" value="${personas.name}" class="edit-input" id="name-${index}" />
+          <input type="text" value="${personas.description}" class="edit-input" id="description-${index}" />
+          <input type="text" value="${personas.image}" class="edit-input" id="image-${index}" />
         </div>
         <div class="edit-btns">
-        <button onclick="togglePublicStatus('${persona.name}', ${persona.public})">
-            ${persona.public ? 'Tornar Privado' : 'Tornar Público'}
+        <button onclick="togglePublicStatus('${personas.name}', ${personas.public})">
+            ${personas.public ? 'Tornar Privado' : 'Tornar Público'}
           </button>
-          <button onclick="savePersona('${persona.name}', ${index})">Salvar</button>
-          <button onclick="deletePersona('${persona.name}')">Excluir</button>
+          <button onclick="savePersona('${personas.name}', ${index})">Salvar</button>
+          <button onclick="deletePersona('${personas.name}')">Excluir</button>
         </div>
       `;
       personaEditList.appendChild(personaDiv);
