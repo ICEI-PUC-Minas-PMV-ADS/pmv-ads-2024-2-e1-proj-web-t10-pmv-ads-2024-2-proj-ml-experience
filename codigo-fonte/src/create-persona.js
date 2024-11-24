@@ -1,5 +1,4 @@
-let loggedUsername = '';
-
+let loggedUsername = "";
 
 function getLoggedUser() {
   try {
@@ -8,10 +7,10 @@ function getLoggedUser() {
       console.error('Nenhum usuário logado encontrado.');
       return;
     }
-    const parsedData = JSON.parse(userData);
-    loggedUsername = parsedData.username;
+    loggedUsername = userData;
   } catch (error) {
     console.error('Erro ao obter o usuário logado do localStorage:', error);
+
   }
 }
 
@@ -40,6 +39,7 @@ function alertSuccess(message) {
 
 
   async function createPersona() {
+    getLoggedUser();
     const owner = loggedUsername;
     const name = document.getElementById('personaName').value;
     const description = document.getElementById('personaDescription').value;
