@@ -1,27 +1,27 @@
 body {
-    background-image: url('images/fundo2.png'); /* Coloque o caminho correto da sua imagem */
-    background-size: cover; /* Garante que a imagem cubra todo o background */
-    background-position: center; /* Centraliza a imagem de fundo */
-    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-image: url('images/fundo2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Garante que o corpo ocupe a tela inteira */
+    min-height: 100vh; 
     overflow-x: hidden;
-    overflow-y: auto; /* Permite rolagem na página */
+    overflow-y: auto; 
   }
   
   .container-fluid {
     flex: 1;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ajusta o container para ocupar a altura total da página */
+    min-height: 100vh; 
   }
   
   .sidebar {
-    background-color: rgba(42, 75, 92, 0.8); /* Cor de fundo com transparência */
+    background-color: rgba(42, 75, 92, 0.8); 
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
@@ -60,7 +60,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     margin: 20px;
-    min-height: calc(100vh - 100px); /* Garante que o conteúdo principal ocupe o espaço necessário */
+    min-height: calc(100vh - 100px); 
   }
   
   .main-content .logo {
@@ -77,17 +77,17 @@ body {
     color: white;
   }
   
-  /* Área do chat no centro */
+  
   .chat-box {
-    flex-grow: 1; /* Faz com que o chat cresça conforme necessário */
-    background-color: rgba(0, 0, 0, 0.863); /* Fundo com transparência */
+    flex-grow: 1; 
+    background-color: rgba(0, 0, 0, 0.863); 
     border-radius: 15px;
     padding: 20px;
     margin: 20px 0;
-    overflow-y: auto; /* Ativa rolagem quando necessário */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* As mensagens começam no final da caixa */
+    justify-content: flex-end; 
   }
   
   .message {
@@ -108,7 +108,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.575);
+    background-color: rgba(42, 75, 92, 0.733); 
     border-radius: 20px;
     margin: 20px 0;
   }
@@ -129,7 +129,7 @@ body {
   }
   
   .persona-selected {
-    background-color: rgba(42, 75, 92, 0.733); /* Fundo com transparência */
+    background-color: rgba(42, 75, 92, 0.733); 
     color: white;
     text-align: center;
     padding: 20px;
@@ -138,6 +138,7 @@ body {
   }
   
   .persona-selected .persona-img {
+    background-image: url('images/persona-main.png');
     background-color: #0056b3;
     color: white;
     border-radius: 50%;
@@ -154,9 +155,9 @@ body {
     background-position: center;
   }
   
-  /* Estilos da janela de confirmação */
+  
   #logoutModal {
-    display: none; /* O modal está oculto inicialmente */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
