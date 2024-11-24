@@ -80,7 +80,7 @@ body {
   /* Área do chat no centro */
   .chat-box {
     flex-grow: 1; /* Faz com que o chat cresça conforme necessário */
-    background-color: rgba(74, 74, 74, 0.945); /* Fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.863); /* Fundo com transparência */
     border-radius: 15px;
     padding: 20px;
     margin: 20px 0;
@@ -129,7 +129,7 @@ body {
   }
   
   .persona-selected {
-    background-color: rgba(74, 74, 74, 0.8); /* Fundo com transparência */
+    background-color: rgba(42, 75, 92, 0.733); /* Fundo com transparência */
     color: white;
     text-align: center;
     padding: 20px;
