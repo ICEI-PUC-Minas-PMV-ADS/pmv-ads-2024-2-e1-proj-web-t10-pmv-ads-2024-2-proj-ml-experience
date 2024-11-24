@@ -144,3 +144,7 @@ h1 {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 123, 255, 1);
 }
+
+  .cor-fundo {
+    background-color: rgba(0, 0, 0, 0.863); /* Fundo com transparência */
+  }
