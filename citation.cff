@@ -1,29 +1,22 @@
-message: Please cite this software using these metadata.
-title:
+cff-version: 1.0.1
+message: Sistema para planejamento de viagens
+title: Mochileiros
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - name-suffix: Professor
+  - family-names: Menezes Matias da Silva
+    given-names: João Pedro
+  - family-names: Fonseca Amorim
+    given-names: Igor 
+  - family-names: Almeida Dias 
+    given-names: Luiz Fernando 
+  - name-suffix: Professora
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: De Nardin
+    given-names: Luciana
 keywords:
-  - 
-  - 
-repository-code: 
+  - viagens
+  - mochileiros
+  - gastos
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-mochileiros
+license: CC-BY-4.0
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-26
