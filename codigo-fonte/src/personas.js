@@ -112,15 +112,12 @@ function loadLoggedUser() {
 }
 
 function loadPersonas() {
-    // Recupera dados de personas_publicas
     const publicPersonasData = localStorage.getItem('personas_publicas');
     const publicPersonas = publicPersonasData ? JSON.parse(publicPersonasData) : [];
 
-    // Recupera dados de personas
     const personasData = localStorage.getItem('personas');
     const privatePersonas = personasData ? JSON.parse(personasData) : [];
 
-    // Combina as duas listas
     const allPersonas = [...publicPersonas, ...privatePersonas];
 
     if (allPersonas.length === 0) {

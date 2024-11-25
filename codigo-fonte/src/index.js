@@ -8,8 +8,8 @@ document.addEventListener('mousemove', function(e) {
 function redirectTo(page) {
 	console.log(`Redirecionando para: ${page}`);
 	if (page === 'login') {
-		window.location.href = 'login.html';  // Caminho correto para login.html
+		window.location.href = 'login.html';
 	} else if (page === 'register') {
-		window.location.href = 'login.html';  // Caminho correto para register.html
+		window.location.href = 'login.html';
 	}
 }

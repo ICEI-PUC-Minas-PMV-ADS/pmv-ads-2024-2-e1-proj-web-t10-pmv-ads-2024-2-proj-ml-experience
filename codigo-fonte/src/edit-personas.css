@@ -131,7 +131,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Estilização da barra de rolagem para um toque mais moderno */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -146,5 +145,5 @@ h1 {
 }
 
   .cor-fundo {
-    background-color: rgba(0, 0, 0, 0.863); /* Fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.863);
   }
