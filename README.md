@@ -130,7 +130,7 @@ O público-alvo inclui empresas, desenvolvedores, profissionais da saúde e da h
 
 # Código-Fonte
 
-* <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience">Código Fonte</a>
+* <a href="codigo-fonte">Código Fonte</a>
 
 # Apresentação
 
