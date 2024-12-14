@@ -1,22 +1,27 @@
 cff-version: 1.0.1
-message: Sistema para planejamento de viagens
-title: Mochileiros
+message: Sistema de chating com personas de IA
+title: ML-Experience
 authors:
-  - family-names: Menezes Matias da Silva
-    given-names: João Pedro
-  - family-names: Fonseca Amorim
-    given-names: Igor 
-  - family-names: Almeida Dias 
-    given-names: Luiz Fernando 
+  - family-names: Real
+    given-names: Antônio
+  - family-names: Marques
+    given-names: Diego 
+  - family-names: Nantes
+    given-names: Igor
+  - family-names: Peixoto
+    given-names: Ivan
+  - family-names: Pimenta
+    given-names: Túlio
+  - family-names: Lobo
+    given-names: Yago
   - name-suffix: Professora
-    affiliation: PUC Minas
-    family-names: De Nardin
-    given-names: Luciana
+affiliation: PUC Minas
+    family-names: Azevedo
+    given-names: Humberto
 keywords:
-  - viagens
-  - mochileiros
-  - gastos
-repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e2-proj-int-t5-mochileiros
+  - machine learn
+  - xperience
+repository-code: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-2-e1-proj-web-t10-pmv-ads-2024-2-proj-ml-experience
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2024-06-26
+date-released: 2024-12-13
